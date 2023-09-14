@@ -31,6 +31,9 @@ stest: stest.o
 clean:
 	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz
 
+purge:
+	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz *.orig *.rej config.h
+
 dist: clean
 	mkdir -p dmenu-$(VERSION)
 	cp LICENSE Makefile README arg.h config.def.h config.mk dmenu.1\
