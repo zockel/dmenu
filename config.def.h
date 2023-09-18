@@ -15,9 +15,10 @@ static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#cad3f5", "#24273a" },
 	[SchemeNormHighlight] = { "#c6a0f6", "#24273a" },
-	[SchemeSel] = { "#181926", "#91d7e3" },
-	[SchemeSelHighlight] = { "#181926", "#91d7e3" },
-	[SchemeOut] = { "#000000", "#91d7e3" },
+	[SchemeSel] = { "#181926", "#c6a0f6" },
+	[SchemeSelHighlight] = { "#181926", "#c6a0f6" },
+	[SchemeOut] = { "#000000", "#c6a0f6" },
+	[SchemeBorder] = { "#c6a0f6", NULL },
 };
 
 static const unsigned int alphas[SchemeLast][2] = {
@@ -33,3 +34,7 @@ static unsigned int lines      = 0;
  * for example: " /?\"&[]"
  */
 static const char worddelimiters[] = " ";
+
+/* Size of the window border */
+static unsigned int border_width = 2;
+
